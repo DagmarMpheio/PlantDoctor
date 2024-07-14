@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "497128473690",
+    "project_id": "plantdoctor-61341",
+    "storage_bucket": "plantdoctor-61341.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497128473690:android:d6e3fae757c86345ce0463",
+        "android_client_info": {
+          "package_name": "com.example.apptest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbV13cW0CLy4D0Lzviv7hbk6x0KHif7VI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

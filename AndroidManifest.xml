@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yourapp">
+    
+    <!-- Outras declarações de permissão podem estar aqui -->
+    
+    <!-- Permissão para escrever no armazenamento externo -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <!-- Outras declarações de permissão podem estar aqui -->
+    
+    <application
+        <!-- Outras configurações da aplicação -->
+    </application>
+</manifest>

@@ -1,0 +1,100 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --quiet assemble --no-version-check --depfile C:\Users\Dimitroff\Documents\App_Flutter\apptest\build\app\intermediates\flutter\debug/flutter_build.d --output C:\Users\Dimitroff\Documents\App_Flutter\apptest\build\app\intermediates\flutter\debug -dTargetFile=C:\Users\Dimitroff\Documents\App_Flutter\apptest\lib\main.dart -dTargetPlatform=android -dBuildMode=debug -dTrackWidgetCreation=true --DartDefines=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9jNGNkNDhlMTg2NDYwYjMyZDQ0NTg1Y2UzYzEwMzI3MWFiNjc2MzU1Lw== -dFlavor= -dAndroidArchs=android-x64 -dMinSdkVersion=21 -dIsAndroidLibrary=false debug_android_application
+
+## exception
+
+UnsupportedError: Unsupported operation: Illegal character in path: https:
+
+```
+#0      _Uri._checkWindowsPathReservedCharacters (dart:core/uri.dart:1840:11)
+#1      _Uri._toWindowsFilePath (dart:core/uri.dart:2893:7)
+#2      _Uri.toFilePath (dart:core/uri.dart:2865:38)
+#3      ManifestAssetBundle._parseAssetsFromFolder (package:flutter_tools/src/asset.dart:916:29)
+#4      ManifestAssetBundle._parseAssets (package:flutter_tools/src/asset.dart:817:9)
+#5      ManifestAssetBundle.build (package:flutter_tools/src/asset.dart:267:54)
+<asynchronous suspension>
+#6      copyAssets (package:flutter_tools/src/build_system/targets/assets.dart:57:26)
+<asynchronous suspension>
+#7      AndroidAssetBundle.build (package:flutter_tools/src/build_system/targets/android.dart:66:34)
+<asynchronous suspension>
+#8      _BuildInstance._invokeInternal (package:flutter_tools/src/build_system/build_system.dart:861:9)
+<asynchronous suspension>
+#9      FlutterBuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:628:16)
+<asynchronous suspension>
+#10     AssembleCommand.runCommand (package:flutter_tools/src/commands/assemble.dart:318:32)
+<asynchronous suspension>
+#11     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1389:27)
+<asynchronous suspension>
+#12     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#13     CommandRunner.runCommand (package:args/command_runner.dart:212:13)
+<asynchronous suspension>
+#14     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:355:9)
+<asynchronous suspension>
+#15     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#16     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:295:5)
+<asynchronous suspension>
+#17     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:119:9)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:153:19)
+<asynchronous suspension>
+#19     main (package:flutter_tools/executable.dart:90:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.19.6, on Microsoft Windows [Version 10.0.22621.3447], locale en-US)
+    • Flutter version 3.19.6 on channel stable at C:\Develop\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 54e66469a9 (3 weeks ago), 2024-04-17 13:08:03 -0700
+    • Engine revision c4cd48e186
+    • Dart version 3.3.4
+    • DevTools version 2.31.1
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+    • Android SDK at C:\Users\Dimitroff\AppData\Local\Android\sdk
+    • Platform android-34, build-tools 34.0.0
+    • Java binary at: C:\Program Files\Android\Android Studio1\jbr\bin\java
+    • Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-10027231)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop Windows apps (Visual Studio Professional 2022 17.9.4)
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Professional
+    • Visual Studio Professional 2022 version 17.9.34714.143
+    • Windows 10 SDK version 10.0.22621.0
+
+[✓] Android Studio (version 2022.3)
+    • Android Studio at C:\Program Files\Android\Android Studio1
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-10027231)
+
+[✓] VS Code (version 1.89.0)
+    • VS Code at C:\Users\Dimitroff\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.88.0
+
+[✓] Connected device (4 available)
+    • sdk gphone64 x86 64 (mobile) • emulator-5554 • android-x64    • Android 12 (API 31) (emulator)
+    • Windows (desktop)            • windows       • windows-x64    • Microsoft Windows [Version 10.0.22621.3447]
+    • Chrome (web)                 • chrome        • web-javascript • Google Chrome 124.0.6367.119
+    • Edge (web)                   • edge          • web-javascript • Microsoft Edge 124.0.2478.80
+
+[✓] Network resources
+    • All expected network resources are available.
+
+• No issues found!
+```
